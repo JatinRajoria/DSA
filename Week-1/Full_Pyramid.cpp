@@ -6,8 +6,11 @@ int main(){
     cout<<"Enter the number: ";
     cin>>n;
     for(int i=0; i<n; i++){
-        for(int j=0; j<n-i; j++){
-            if(i==0 || j==0 || j==n-i-1){
+        for(int j=0; j<n-i-1; j++){
+            cout<<"  ";
+        }
+        for(int k=0; k<2*i+1; k++){
+            if(k==0 || k==2*i || i==n-1){
                 cout<<"* ";
             }
             else{
@@ -15,6 +18,6 @@ int main(){
             }
         }
         cout<<endl;
-    }
-    return 0;
+    }   
+
 }
